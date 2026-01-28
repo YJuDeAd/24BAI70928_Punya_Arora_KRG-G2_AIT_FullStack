@@ -1,0 +1,142 @@
+body {
+    background-color: #e9eef7;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    z-index: 1000;
+    gap: 20px;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.mainpage {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.hero-left {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 3rem;
+}
+
+.info p {
+    font-size: 1.4rem;
+    color: #4b5563;
+}
+
+.searchbox {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbox input {
+    flex: 1;
+    background-color: #F3F4F6;
+    padding: 9.6px 32px 9.6px 12.8px;
+    border-radius: 20px;
+    border: none;
+    max-width: 400px;
+}
+
+.searchbox button {
+    background-color: #0000b7;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.tags p {
+    color: #4b5563;
+}
+
+.tags span {
+    color: #0000b7;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.footer {
+    background-color: #01102d;
+    color: #d3d3d3;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: center;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials img {
+    background-color: white;
+    border-radius: 10px;
+}
