@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Dynamic Job Cards</title>
+</head>
+<body>
+    <main class="container">
+        <section class="form-section">
+            <h1>Job Posting Form</h1>
+            <p class="subtitle">Fill in job details and submit to create a new job card.</p>
+
+            <form id="jobPostingForm">
+                <div class="field-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" name="jobTitle" placeholder="e.g., Frontend Developer" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="e.g., TechNova Solutions" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Bengaluru" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="jobType">Job Type</label>
+                    <select id="jobType" name="jobType" required>
+                        <option value="" disabled selected>Select job type</option>
+                        <option value="Full-Time">Full-Time</option>
+                        <option value="Part-Time">Part-Time</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="salary">Salary Range</label>
+                    <input type="text" id="salary" name="salary" placeholder="e.g., ₹6,00,000 - ₹8,00,000" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="experience">Experience Required</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>Select required experience</option>
+                        <option value="Fresher">Fresher</option>
+                        <option value="1-3 Years">1-3 Years</option>
+                        <option value="3-5 Years">3-5 Years</option>
+                        <option value="5+ Years">5+ Years</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="description">Job Description</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Describe role responsibilities, requirements, and benefits" required></textarea>
+                </div>
+
+                <button type="submit">Submit Job</button>
+            </form>
+        </section>
+
+        <section class="cards-section">
+            <h2>Job Listings</h2>
+            <div id="jobCardsContainer" class="cards-container">
+                <p class="empty-state" id="emptyState">No jobs posted yet. Submit the form to add a job card.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
