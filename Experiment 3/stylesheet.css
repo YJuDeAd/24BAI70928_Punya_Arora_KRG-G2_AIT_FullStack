@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-section,
+.profile-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+#jobSearchForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #111827;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+}
+
+button[type="submit"] {
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+.profile-card {
+    margin-top: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: #f9fafb;
+}
+
+.profile-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+.profile-item {
+    margin: 8px 0;
+    color: #374151;
+}
+
+.profile-item strong {
+    color: #111827;
+}
+
+.empty-state {
+    color: #6b7280;
+    font-style: italic;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
