@@ -1,0 +1,31 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 2rem;
+}
+.controls {
+    margin-bottom: 1rem;
+}
+input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+button#removeBtn {
+    background-color: #dc3545;
+}
+button:hover {
+    opacity: 0.9;
+}
+li {
+    margin-bottom: 5px;
+}
