@@ -1,0 +1,3 @@
+Q1) Design a Student Registration Form using HTML containing fields: Full Name, Email, Password, Mobile Number, Gender (radio buttons), Course (dropdown), Skills (checkboxes), Address (textarea), and Submit/Reset buttons. Apply CSS to align form fields properly, add spacing, border styling, and button hover effects.
+
+Q3) Create a React Form Component that accepts Name and Email as input fields and displays submitted data below the form after clicking submit button.
